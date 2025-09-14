@@ -6,10 +6,10 @@
 
 1.  **Understanding Operation Principles:** Exploring the theoretical
     foundations of Proell governors, including equations and control
-    mechanisms.\
+    mechanisms.
 2.  **Building A Simulation Model:** Construct a dynamic simulation
     model in MATLAB to replicate the behaviour of a Proell governor
-    under different conditions.\
+    under different conditions.
 3.  **Investigating System Performance:** The simulation model is used
     to analyse the performance of the Proell governor system under
     various scenarios, such as changes in load, speed setpoints, and
@@ -17,8 +17,8 @@
 
 ## Assumptions
 
-1.  Friction at all joints is negligible.\
-2.  Air resistance is ignored.\
+1.  Friction at all joints is negligible. 
+2.  Air resistance is ignored. 
 3.  Gravity acts in -z direction.
 
 ## Scope
@@ -80,16 +80,16 @@ The Proell Governor's height is given by:
 
 ## Kinematic Analysis
 
--   m - Mass of each ball (kg)\
--   W - Weight of each ball = m\*g (N)\
--   M - Mass of central load (N)\
--   r - Radius of rotation (m)\
--   h - Height of governor (m)\
--   w - Angular speed of the ball (rad/s)\
--   Fc - Centrifugal force acting on the ball (N)\
--   T1 - Tension in the arm (N)\
--   T2 - Tension in the link (N)\
--   α - Angle of inclination of the arm (rad)\
+-   m - Mass of each ball (kg) 
+-   W - Weight of each ball = m *g (N) 
+-   M - Mass of central load (N) 
+-   r - Radius of rotation (m) 
+-   h - Height of governor (m) 
+-   w - Angular speed of the ball (rad/s) 
+-   Fc - Centrifugal force acting on the ball (N) 
+-   T1 - Tension in the arm (N) 
+-   T2 - Tension in the link (N) 
+-   α - Angle of inclination of the arm (rad) 
 -   β - Angle of inclination of the link (rad)
 
 Equation derivation:
@@ -111,11 +111,11 @@ configuration block, world frame, and mechanism configuration were
 added.
 
 -   Cylinders were used to create the central rod, arms, sleeve, and
-    other links.\
--   Spheres represented the spherical side weights.\
--   Bricks were used to create the top solid.\
+    other links. 
+-   Spheres represented the spherical side weights. 
+-   Bricks were used to create the top solid. 
 -   Joints, such as revolute and cylindrical joints, were necessary to
-    connect different parts of the model.\
+    connect different parts of the model. 
 -   The Rigid Transform tool in MATLAB Simscape was employed to
     correctly position the created bodies.
 
@@ -131,15 +131,15 @@ Mass of the sleeve: **0.37 kg**.
 
 ## Graphs
 
--   **Variable angular speed vs time**\
--   **Constant angular speed vs time @ w=10 rad/s**\
--   **Variation of lift with angular velocity**\
+-   **Variable angular speed vs time** 
+-   **Constant angular speed vs time @ w=10 rad/s** 
+-   **Variation of lift with angular velocity** 
 -   **Effect of deadweight on lift @ w=10 rad/s**
 
 ## Inference
 
 -   Increasing the spin velocity leads to an increase in the lift of the
-    sleeve.\
+    sleeve. 
 -   The lift of the sleeve increases when the mass of the balls (dead
     weight) is increased.
 
